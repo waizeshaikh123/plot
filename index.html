@@ -15,201 +15,283 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Pato</title>
 </head>
 
 <body>
-
-    <!-- header -->
-    <header id="header">
-        <nav class=" py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-md-12 col-sm-12">
-                        <div class="img_logo">
-                            <a href="#"><img src="images/img_front/logo.png.png" alt="" class=" img-fluid"></a>
+    <!--################## main ################## -->
+    <div id="main" data-scroll-container>
+        <!-- header -->
+        <header id="header" data-scroll>
+            <nav class=" py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <div class="img_logo">
+                                <a href="#"><img src="images/img_front/logo.png.png" alt="" class=" img-fluid"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8 d-lg-block">
-                        <ul class=" justify-content-center align-items-center pt-3 list-unstyled d-flex gap-5 naving">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">menu</a></li>
-                            <li><a href="#">reservation</a></li>
-                            <li><a href="#">gallery</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="social d-flex justify-content-center  align-items-center gap-3">
-                            <a href="#"><i class="ri-blender-line"></i></a>
-                            <a href="#"><i class="ri-facebook-fill"></i></i></a>
-                            <a href="#"><i class="ri-twitter-fill"></i></a>
-                            <a href="#"><button class="btn" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-                                        class="ri-align-right fs-3 text-white"></i></button>
+                        <div class="col-lg-8 d-lg-block">
+                            <ul
+                                class=" justify-content-center align-items-center pt-3 list-unstyled d-flex gap-5 naving">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">menu</a></li>
+                                <li><a href="#">reservation</a></li>
+                                <li><a href="#">gallery</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="social d-flex justify-content-center  align-items-center gap-3">
+                                <a href="#"><i class="ri-blender-line"></i></a>
+                                <a href="#"><i class="ri-facebook-fill"></i></i></a>
+                                <a href="#"><i class="ri-twitter-fill"></i></a>
+                                <a href="#"><button class="btn" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                            class="ri-align-right fs-3 text-white"></i></button>
 
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="row side-bar  pt-3">
-                                            <ul
-                                                class=" d-flex gap-4 flex-column justify-content-center align-items-center">
-                                                <a href="#">Home</a>
-                                                <a href="#">menu</a>
-                                                <a href="#">reservation</a>
-                                                <a href="#">gallery</a>
-                                                <a href="#">about</a>
-                                                <a href="#">blog</a>
-                                                <a href="#">contact</a>
-                                                <button class="btn btn-outline-dark bg-dark text-white">
-                                                    RESERVATION
-                                                </button>
-                                                <h1>GALLERY</h1>
-                                                <div
-                                                    class="side-bar-div justify-content-center d-flex align-items-center flex-wrap gap-4">
-                                                    <img src="images/img_front/photo-gallery-thumb-01.jpg.png" alt=""
-                                                        class=" img-fluid">
-                                                    <img src="images/img_front/photo-gallery-thumb-02.jpg.png" alt=""
-                                                        class=" img-fluid">
-                                                    <img src="images/img_front/photo-gallery-thumb-03.jpg.png" alt=""
-                                                        class=" img-fluid">
-                                                    <img src="images/img_front/photo-gallery-thumb-04.jpg.png" alt=""
-                                                        class=" img-fluid">
-                                                    <img src="images/img_front/photo-gallery-thumb-05.jpg.png" alt=""
-                                                        class=" img-fluid">
-                                                    <img src="images/img_front/photo-gallery-thumb-06.jpg.png" alt=""
-                                                        class=" img-fluid">
-                                                    <img src="images/img_front/photo-gallery-thumb-07.jpg.png" alt=""
-                                                        class=" img-fluid">
-                                                    <img src="images/img_front/photo-gallery-thumb-08.jpg.png" alt=""
-                                                        class=" img-fluid">
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                        aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="row side-bar  pt-3">
+                                                <ul
+                                                    class=" d-flex gap-4 flex-column justify-content-center align-items-center">
+                                                    <a href="#">Home</a>
+                                                    <a href="#">menu</a>
+                                                    <a href="#">reservation</a>
+                                                    <a href="#">gallery</a>
+                                                    <a href="#">about</a>
+                                                    <a href="#">blog</a>
+                                                    <a href="#">contact</a>
+                                                    <button class="btn btn-outline-dark bg-dark text-white">
+                                                        RESERVATION
+                                                    </button>
+                                                    <h1>GALLERY</h1>
+                                                    <div
+                                                        class="side-bar-div justify-content-center d-flex align-items-center flex-wrap gap-4">
+                                                        <img src="images/img_front/photo-gallery-thumb-01.jpg.png"
+                                                            alt="" class=" img-fluid">
+                                                        <img src="images/img_front/photo-gallery-thumb-02.jpg.png"
+                                                            alt="" class=" img-fluid">
+                                                        <img src="images/img_front/photo-gallery-thumb-03.jpg.png"
+                                                            alt="" class=" img-fluid">
+                                                        <img src="images/img_front/photo-gallery-thumb-04.jpg.png"
+                                                            alt="" class=" img-fluid">
+                                                        <img src="images/img_front/photo-gallery-thumb-05.jpg.png"
+                                                            alt="" class=" img-fluid">
+                                                        <img src="images/img_front/photo-gallery-thumb-06.jpg.png"
+                                                            alt="" class=" img-fluid">
+                                                        <img src="images/img_front/photo-gallery-thumb-07.jpg.png"
+                                                            alt="" class=" img-fluid">
+                                                        <img src="images/img_front/photo-gallery-thumb-08.jpg.png"
+                                                            alt="" class=" img-fluid">
 
-                                                </div>
-                                            </ul>
+                                                    </div>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-scroll data-scroll-speed="-2">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/bg_img/slide1-01.jpg" class="d-block w-100" alt="...">
+                        <div class="cara-text d-flex justify-content-center mx-auto  flex-column text-center">
+                            <h3 class="wow animate__animated animate__backInDown">Welcome to</h3>
+                            <h1>PATO PLACE</h1>
+                            <a href="#" class="btn text-center mx-auto">Look Menu</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bg_img/master-slides-02.jpg" class="d-block w-100" alt="...">
+                        <div class="cara-text d-flex justify-content-center mx-auto  flex-column text-center">
+                            <h3 class="wow animate__animated animate__backInDown">Welcome to</h3>
+                            <h1>PATO PLACE</h1>
+                            <a href="#" class="btn text-center mx-auto">Look Menu</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bg_img/master-slides-03.jpg" class="d-block w-100" alt="...">
+                        <div class="cara-text d-flex justify-content-center mx-auto  flex-column text-center">
+                            <h3 class="wow animate__animated animate__backInDown">Welcome to</h3>
+                            <h1>PATO PLACE</h1>
+                            <a href="#" class="btn text-center mx-auto">Look Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- hero-section -->
+        <section class="hero" data-scroll>
+            <div class="container">
+                <div class="row mb-sm-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                        <div class=" d-flex flex-column gap-3 text-center mx-auto pt-5">
+                            <h3 class=" fst-italic text-danger">Italian Restourant</h3>
+                            <h1 class=" text-dark fw-bolder h1">WELCOME</h1>
+                            <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                                imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+                            <a href="#" class=" text-decoration-none fs-6">Our Story →</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="img_our d-flex justify-content-center align-items-center">
+                            <img data-scroll data-scroll-speed="-2" src="images/img_front/our-story-01.jpg.png" alt=""
+                                class=" img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- discover place -->
+        <section class="discover py-5" data-scroll data-scroll-speed="1">
+            <div class="container mx-auto">
+                <div class=" text-center mx-auto pt-4">
+                    <h3 class=" fst-italic text-danger fw-bolder">Discover</h3>
+                    <h1 class=" text-white">PATO PLACE</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- food court -->
+        <section class="food_court py-5" data-scroll>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class=" d-flex justify-content-center gap-5 align-items-center flex-wrap py-5">
+                            <div class="card" style="width: 20rem;">
+                                <img src="images/img_front/intro-01.jpg.png" class="card-img-top img-fluid"
+                                    alt="intro-1">
+                                <div class="card-body lh-base">
+                                    <a href="#" class="a text-uppercase text-decoration-none">Romantic rastourant</a>
+                                    <p class="card-text  fw-light">Phasellus lorem enim, luctus ut velit eget,
+                                        con-vallis
+                                        egestas
+                                        eros.</p>
+                                    <a href="#" class="fs-6 text-decoration-none">LEARN MORE →</a>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/bg_img/master-slides-03.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/bg_img/master-slides-02.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/bg_img/slide1-01.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </header>
-
-    <!-- hero-section -->
-    <section class="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class=" d-flex flex-column gap-3 text-center mx-auto pt-5">
-                        <h3 class=" fst-italic text-danger">Italian Restourant</h3>
-                        <h1 class=" text-dark fw-bolder h1">WELCOME</h1>
-                        <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
-                            imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
-                        <a href="#" class=" text-decoration-none fs-6">Our Story →</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="img_our d-flex justify-content-center align-items-center">
-                        <img src="images/img_front/our-story-01.jpg.png" alt="" class=" img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- discover place -->
-    <section class="discover py-5">
-        <div class="container mx-auto">
-            <div class=" text-center mx-auto pt-4">
-                <h3 class=" fst-italic text-danger fw-bolder">Discover</h3>
-                <h1 class=" text-white">PATO PLACE</h1>
-            </div>
-        </div>
-    </section>
-
-    <!-- food court -->
-    <section class="food_court">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class=" d-flex justify-content-center gap-5 align-items-center flex-wrap py-5">
-                        <div class="card" style="width: 20rem;">
-                            <img src="images/img_front/intro-01.jpg.png" class="card-img-top img-fluid" alt="intro-1">
-                            <div class="card-body lh-base">
-                                <a href="#" class="a text-uppercase text-decoration-none">Romantic rastourant</a>
-                                <p class="card-text  fw-light">Phasellus lorem enim, luctus ut velit eget, con-vallis
-                                    egestas
-                                    eros.</p>
-                                <a href="#" class="fs-6 text-decoration-none">LEARN MORE →</a>
                             </div>
-                        </div>
-                        <div class="card" style="width: 20rem;">
-                            <img src="images/img_front/intro-02.jpg.png" class="card-img-top img-fluid" alt="intro-1">
-                            <div class="card-body lh-base">
-                                <a href="#" class="a text-uppercase text-decoration-none">DELICIOUS FOOD</a>
-                                <p class="card-text  fw-light">Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna</p>
-                                <a href="#" class="fs-6 text-decoration-none">LEARN MORE →</a>
+                            <div class="card" style="width: 20rem;">
+                                <img src="images/img_front/intro-02.jpg.png" class="card-img-top img-fluid"
+                                    alt="intro-1">
+                                <div class="card-body lh-base">
+                                    <a href="#" class="a text-uppercase text-decoration-none">DELICIOUS FOOD</a>
+                                    <p class="card-text  fw-light">Aliquam eget aliquam magna, quis posuere risus ac
+                                        justo
+                                        ipsum nibh urna</p>
+                                    <a href="#" class="fs-6 text-decoration-none">LEARN MORE →</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card" style="width: 20rem;">
-                            <img src="images/img_front/intro-04.jpg.png" class="card-img-top img-fluid" alt="intro-1">
-                            <div class="card-body lh-base">
-                                <a href="#" class="a text-uppercase text-decoration-none">RED WINES YOU LOVE</a>
-                                <p class="card-text  fw-light">Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
-                                <a href="#" class="fs-6 text-decoration-none">LEARN MORE →</a>
+                            <div class="card" style="width: 20rem;">
+                                <img src="images/img_front/intro-04.jpg.png" class="card-img-top img-fluid"
+                                    alt="intro-1">
+                                <div class="card-body lh-base">
+                                    <a href="#" class="a text-uppercase text-decoration-none">RED WINES YOU LOVE</a>
+                                    <p class="card-text  fw-light">Sed ornare ligula eget tortor tempor, quis porta
+                                        tellus
+                                        dictum.</p>
+                                    <a href="#" class="fs-6 text-decoration-none">LEARN MORE →</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Our menue -->
+        <section class="our_menu py-5" data-scroll>
+            <div class="container">
+                <h4 class=" text-center fst-italic text-danger fw-bold">Discover </h4>
+                <h1 class=" text-dark text-center">OUR MENU</h1>
+
+                <div class="row pt-5">
+                    <div class="col-lg-8 col-md-8 col-sm-12" data-scroll-speed="-2">
+                        <div class=" d-flex justify-content-around align-items-center gap-5">
+                            <div
+                                class="menu-div d-flex flex-column position-relative justify-content-center align-items-center">
+                                <img src="images/img_front/our-menu-01.jpg.png" alt="" class=" img-fluid">
+                                <a href="#" class="btn position-absolute py-2 px-3">LUNCH</a>
+                            </div>
+                            <div
+                                class="menu-div d-flex flex-column position-relative justify-content-center align-items-center">
+                                <img src="images/img_front/our-menu-05.jpg.png" alt="" class=" img-fluid">
+                                <a href="#" class="btn position-absolute py-2 px-3">DINNER</a>
+                            </div>
+                        </div>
+
+                        <div class="row py-4">
+                            <div
+                                class="row-2 d-flex flex-column position-relative justify-content-center align-items-center">
+                                <img src="images/img_front/our-menu-13.jpg.png" alt="" class=" img-fluid">
+                                <a href="#" class="btn position-absolute py-2 px-3">HAPPY HOUR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12" >
+                        <div class=" flex-column d-flex justify-content-around align-items-center gap-3">
+                            <div 
+                                class="row-2 d-flex flex-column position-relative justify-content-center align-items-center">
+                                <img data-scroll-speed="-1" src="images/img_front/our-menu-08.jpg.png" alt="" class=" img-fluid">
+                                <a href="#" class="btn position-absolute py-2 px-3">DRINK</a>
+                            </div>
+                            <div
+                                class="row-2 flex-column d-flex flex-column position-relative justify-content-center align-items-center">
+                                <img src="images/img_front/our-menu-10.jpg.png" alt="" class=" img-fluid">
+                                <a href="#" class="btn position-absolute py-2 px-3">STARTERS</a>
+                            </div>
+                        </div>
+                        <div class="row py-4">
+                            <div
+                                class="row-2 d-flex flex-column position-relative justify-content-center align-items-center">
+                                <img src="images/img_front/our-menu-16.jpg.png" alt="" class=" img-fluid">
+                                <a href="#" class="btn position-absolute py-2 px-3">DESERTS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="js/script.js"></script>
 </body>
 
